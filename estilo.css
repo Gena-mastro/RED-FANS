@@ -1,16 +1,6 @@
-/* -------------------------------
-   Reset márgenes y fondo negro
---------------------------------- */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #000;
+html {
+   background-color: #000;
 }
-
-/* -------------------------------
-   Tipografía personalizada
---------------------------------- */
 @font-face {
   font-family: 'Jugabet';
   src: url('img/Jugabet-BlackItalic.4f99304c.woff2') format('woff2');
@@ -18,9 +8,6 @@ html, body {
   font-style: normal;
 }
 
-/* -------------------------------
-   Estilos del body
---------------------------------- */
 body {
   margin: 0;
   font-family: 'Bebas Neue', sans-serif;
@@ -38,9 +25,6 @@ body {
   animation: fadeSlideIn 0.7s ease-out;
 }
 
-/* -------------------------------
-   Logo
---------------------------------- */
 .logo-wrapper {
   text-align: center;
   margin-top: -30px;   /* Más espacio arriba */
@@ -52,9 +36,6 @@ body {
   max-width: 85vw;    /* Se adapta en pantallas pequeñas */
 }
 
-/* -------------------------------
-   Tarjeta principal
---------------------------------- */
 .card {
   background-color: rgba(0, 0, 0, 0.45);
   border-radius: 20px;
@@ -76,9 +57,12 @@ body {
   color: #fff;
 }
 
-/* -------------------------------
-   Botón de WhatsApp
---------------------------------- */
+.boton-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
 .popup-button {
   background: linear-gradient(113.27deg, #c01f1f 15.04%, #171717 84.96%);
   color: #ffffff;
@@ -142,9 +126,22 @@ body {
   }
 }
 
-/* -------------------------------
-   Input de nombre
---------------------------------- */
+@keyframes subtlePulse {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.08); }
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .nombre-input {
   width: 100%;
   max-width: 100%;
@@ -174,11 +171,8 @@ body {
   box-shadow: 0 0 18px rgba(255, 255, 255, 0.4);
 }
 
-/* -------------------------------
-   Texto dorado neón
---------------------------------- */
 .dorado-neon {
-  color: #c01f1f;
+ color: #c01f1f;
   font-size: 42px;
   text-shadow: 0 0 15px #c01f1f, 0 0 30px #c01f1f;
   animation: glow-verde 2s infinite ease-in-out;
@@ -189,9 +183,6 @@ body {
   50% { text-shadow: 0 0 20px #c01f1f; }
 }
 
-/* -------------------------------
-   Info externa
---------------------------------- */
 .info-externa {
   margin-top: 20px;
   text-align: center;
@@ -201,9 +192,6 @@ body {
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-/* -------------------------------
-   Métodos de pago
---------------------------------- */
 .metodos-pago {
   margin-top: 0px;
   text-align: center;
@@ -235,9 +223,6 @@ body {
   transform: scale(1.1);
 }
 
-/* -------------------------------
-   Slider de juegos
---------------------------------- */
 .barra-juegos-slider {
   overflow: hidden;
   width: 100%;
@@ -272,23 +257,4 @@ body {
 @keyframes scrollLeft {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
-}
-
-/* -------------------------------
-   Animaciones comunes
---------------------------------- */
-@keyframes fadeSlideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes subtlePulse {
-  0%, 100% { filter: brightness(1); }
-  50% { filter: brightness(1.08); }
 }
