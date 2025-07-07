@@ -61,7 +61,7 @@ body {
 }
 
 .popup-button {
-  background: linear-gradient(113.27deg, #16411a 15.04%, #13f02e 84.96%);
+  background: linear-gradient(113.27deg, #c01f1f 15.04%, #171717 84.96%);
   color: #ffffff;
   font-family: 'Jugabet', 'Bebas Neue', sans-serif;
   font-size: 22px;
@@ -72,8 +72,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 14px;
-  box-shadow: 0 0 18px rgba(19, 240, 46, 0.25),
-              0 0 10px rgba(22, 65, 26, 0.4) inset;
+  box-shadow: 0 0 18px #c01f1f, 0 0 10px rgba(22, 65, 26, 0.4) inset;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: pulse 1s infinite ease-in-out;
